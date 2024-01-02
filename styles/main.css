@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'crackman-webfont';
+  src: url('../fonts/crackman-webfont.woff');
+  src: url('../fonts/crackman-webfont.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgba(4, 11, 77, 0.831);
+}
+
+h1 {
+  height: 20px;
+  text-align: center;
+  font-family:'crackman-webfont';
+  font-size: 80px;
+  color: #fd6e14;    
+}
+
+
+.grid-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  align-items: center;  
+  border: solid 4px #fd6e14;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 90%;
+  justify-content: center;
+  height: 832px;
+  width: 896px;
+  box-shadow: 10px 10px 40px rgba(2, 6, 40, 0.99); 
+}
+
+.grid div {  
+  flex-grow: 1;
+  height: 10%;
+  width: 10%;
+}
+
+.grid div.pac {
+  background-image: url('../assets/Pacman.png');  
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.wall {
+  height: 32px;
+  width: 32px;
+  background-image: url("../assets/wall.png");
+}
+.food {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-image: url("../assets/Food.png");  
+}
+
+.background {
+  height: 32px;
+  width: 32px;
+  background-image: url("../assets/background.png"); 
+}
+#scoreboard {
+  height: 60px;
+  width: 600px;    
+  display: flex; 
+  justify-content: center;
+  align-items: center;   
+  font-size: 40px;
+  color: yellow;
+  text-shadow: 3px 3px 4px #0a1b06; 
+  padding: 20px; 
+}
